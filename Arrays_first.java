@@ -6,5 +6,7 @@ public class Arrays_first {
         }
         for(int i =0 ;i<(numbers.length);i++){
             System.out.print(numbers[i]+"  ");
-    }}
+        }
+
+    }
 }
