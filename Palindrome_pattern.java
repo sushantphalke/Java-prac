@@ -8,10 +8,10 @@ public class Palindrome_pattern {
             for(int j =i; j>=1;j--){
                 System.out.print(j);
             }
-            if (i!=1){
-            for(int j =2; j<=i;j++){
+
+            for(int j =2; j<=i; j++){
                 System.out.print(j);
-            }}
+            }
             for(int j =1; j<=(n-i);j++){
                 System.out.print(" ");
             }
