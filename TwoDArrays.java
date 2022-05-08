@@ -1,6 +1,6 @@
 public class TwoDArrays {
     public static void main(String[] args) {
-        int [][] numbers = new int[15][15];
+        int [][] numbers = new int[10][15];
         for(int i =0 ;i<(numbers.length);i++){
             for(int j =0 ;j<(numbers.length);j++){
                 numbers[i][j]=j;
