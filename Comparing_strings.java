@@ -31,8 +31,10 @@ public class Comparing_strings {
         System.out.println(sb.length());
         sb.insert( sb.length(),"\nNever let you go, never let me down");
         System.out.println(sb);
-        sb.delete(59,sb.length());
+        sb.delete(61,sb.length());
         System.out.println("\n"+sb);
+        sb.delete(60,61);
+        System.out.println(sb);
 
     }
 }
