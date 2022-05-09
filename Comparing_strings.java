@@ -14,5 +14,6 @@ public class Comparing_strings {
         {
             System.out.println("strings are not equal");
         }
+//        do not use == for comparing strings as it may results in failing some test cases. compareTo() is used instead of this.
     }
 }
