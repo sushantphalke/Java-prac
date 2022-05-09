@@ -20,5 +20,19 @@ public class Comparing_strings {
         System.out.println(mysubstring);
         System.out.println(newsubstring);
 
+//        stings are immutable in java
+//        STRING BUILDER IN JAVA ****************************************
+//        We use string builder instead of strings in java
+        StringBuilder sb = new StringBuilder("gon  through the darkest of days\n" +
+                "Heaven's a heartbreak away");
+        sb.setCharAt(3,'e');
+        System.out.println(sb);
+
+        System.out.println(sb.length());
+        sb.insert( sb.length(),"\nNever let you go, never let me down");
+        System.out.println(sb);
+        sb.delete(59,sb.length());
+        System.out.println("\n"+sb);
+
     }
 }
