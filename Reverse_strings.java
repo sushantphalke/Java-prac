@@ -1,6 +1,10 @@
+import java.util.Scanner;
+
 public class Reverse_strings {
     public static void main(String[] args) {
-        String name ="sushant";
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter any string :");
+        String name = input.nextLine();
         StringBuilder sb = new StringBuilder(name);
         for (int i = 0 ; i<sb.length()/2;i++){
             int front = (i);
@@ -9,7 +13,6 @@ public class Reverse_strings {
             char backchar =sb.charAt(back);
             sb.setCharAt(front,backchar);
             sb.setCharAt(back,frontchar);
-
         }
         System.out.println(sb);
     }
