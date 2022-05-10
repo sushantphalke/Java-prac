@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Bit_manuplation {
+public class Bit_manipulation {
     public static void main(String[] args) {
 
 //      Get the bit at specific position ****************
@@ -29,4 +29,6 @@ public class Bit_manuplation {
         }
         return binary;
     }
+
+
 }
