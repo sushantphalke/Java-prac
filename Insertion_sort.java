@@ -1,7 +1,7 @@
 public class Insertion_sort {
     public static void main(String[] args) {
         int [] numbers = {7,3,4,2,5,1,34,33,32,96};
-
+//insertion sort
         for (int i=1; i< numbers.length;i++){
             int current = numbers[i];
             int j=i-1;
