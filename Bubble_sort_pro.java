@@ -1,15 +1,25 @@
 import java.util.Scanner;
 
 public class Bubble_sort_pro {
+
         public static void main(String[] args) {
+//          creating the scanner obj. to get input
             Scanner input  = new Scanner(System.in);
+
             int[] numbers =getUserDefinedIntArray();
+
             System.out.println("User input Array : ");
             printArray(numbers);
+
+//          applying bubble sort on user defined array
             int[] sorted_array = bubble_sort(numbers);
+
             System.out.println("\nSorted Array by Bubble Sort :");
             printArray(sorted_array);
-        }
+
+        }//end of psvm
+
+//bubble sort function
         public static int[] bubble_sort(int[] arrayToSort){
             for (int i = 0; i<arrayToSort.length-1; i++){
                 for (int j=0;j<arrayToSort.length-i-1;j++) {
@@ -25,12 +35,14 @@ public class Bubble_sort_pro {
             return arrayToSort;
         }
 
+//function to print array
         public static void printArray(int [] myarray) {
             for(int i =0 ;i<(myarray.length);i++) {
                 System.out.print(myarray[i] + "  ");
             }
         }
 
+//function to get user defined array of integers
         public static int[] getUserDefinedIntArray() {
             Scanner input  = new Scanner(System.in);
 
@@ -47,4 +59,4 @@ public class Bubble_sort_pro {
         }
 
 
-}
+}//end of class
