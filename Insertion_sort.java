@@ -1,6 +1,6 @@
 public class Insertion_sort {
     public static void main(String[] args) {
-        int [] numbers = {7,3,4,2,5,1};
+        int [] numbers = {7,3,4,2,5,1,34,33,32,96};
 
         for (int i=1; i< numbers.length;i++){
             int current = numbers[i];
