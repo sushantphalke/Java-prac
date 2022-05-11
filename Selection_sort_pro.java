@@ -21,19 +21,29 @@ public class Selection_sort_pro {
 
         for (int i = 0; i<arrayToSort.length; i++){
 
-            int noToSwap = arrayToSort[i];
-            int position = i;
+//            int noToSwap = arrayToSort[i];
+//            int position = i;
+//
+//            for (int j=i+1;j<arrayToSort.length;j++) {
+//
+//                if (noToSwap>arrayToSort[j]) {
+//                    noToSwap = arrayToSort[j];
+//                    position= j;
+//                }
+//            }
+//            int temp = arrayToSort[i];
+//            arrayToSort[i]=arrayToSort[position];
+//            arrayToSort[position]=temp;
 
-            for (int j=i+1;j<arrayToSort.length;j++) {
-
-                if (noToSwap>arrayToSort[j]) {
-                    noToSwap = arrayToSort[j];
-                    position= j;
+            int smallest = i;
+            for (int j=i+1; j<arrayToSort.length;j++){
+                if(arrayToSort[smallest]>arrayToSort[j]){
+                    smallest = j;
                 }
             }
-            int temp = arrayToSort[i];
-            arrayToSort[i]=arrayToSort[position];
-            arrayToSort[position]=temp;
+            int temp = arrayToSort[smallest];
+            arrayToSort[smallest] = arrayToSort[i];
+            arrayToSort[i] = temp;
         }
 
         return arrayToSort;
