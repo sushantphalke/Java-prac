@@ -1,11 +1,11 @@
 
 public class Selection_sort {
     public static void main(String[] args) {
-        int [] numbers = {2,4,3,7,5,8};
-        for (int i=0; i< numbers.length-1;i++){
+        int [] numbers = {3,2,1,5,4};
+        for (int i=0; i< numbers.length;i++){
             int noToSwap = numbers[i];
             int pos = i;
-            for (int j=i+1;j< numbers.length-1;j++) {
+            for (int j=i+1;j< numbers.length;j++) {
                 if (noToSwap>numbers[j]) {
                     pos= j;
                 }
