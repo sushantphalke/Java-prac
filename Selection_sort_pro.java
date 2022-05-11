@@ -19,14 +19,15 @@ public class Selection_sort_pro {
     //selection sort function
     public static int[] selection_sort(int[] arrayToSort){
 
-        for (int i = 0; i<arrayToSort.length-1; i++){
+        for (int i = 0; i<arrayToSort.length; i++){
 
             int noToSwap = arrayToSort[i];
             int position = i;
 
-            for (int j=i+1;j<arrayToSort.length-1;j++) {
+            for (int j=i+1;j<arrayToSort.length;j++) {
 
                 if (noToSwap>arrayToSort[j]) {
+                    noToSwap = arrayToSort[j];
                     position= j;
                 }
             }
