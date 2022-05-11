@@ -3,8 +3,6 @@ import java.util.Scanner;
 public class Bubble_sort_pro {
 
         public static void main(String[] args) {
-//          creating the scanner obj. to get input
-            Scanner input  = new Scanner(System.in);
 
             int[] numbers =getUserDefinedIntArray();
 
@@ -37,9 +35,7 @@ public class Bubble_sort_pro {
 
 //function to print array
         public static void printArray(int [] myarray) {
-            for(int i =0 ;i<(myarray.length);i++) {
-                System.out.print(myarray[i] + "  ");
-            }
+            for (int j : myarray) System.out.print(j + " ");
         }
 
 //function to get user defined array of integers
