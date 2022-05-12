@@ -17,6 +17,7 @@ public class OOP_one {
         String pen1type = new String(pen1.type= new StringBuilder("Ballpoint"));
 //      System.out.println(pen1.name.charAt(3));
         System.out.println(pen1name + pen1type);
+        pen1.Write();
 
     }
 }
