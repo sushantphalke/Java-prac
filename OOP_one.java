@@ -20,7 +20,15 @@ public class OOP_one {
         pen1.name= new StringBuilder("Parker");
         pen1.type= new StringBuilder("Ballpoint");
         pen1.color= new StringBuilder("Blue");
+        System.out.println("Properties of pen1");
         pen1.PrintProperties();
+
+        Pen pen2 = new Pen();
+        pen2.name = new StringBuilder("Reynolds");
+        pen2.type = new StringBuilder("Gel");
+        pen2.color= new StringBuilder("Black");
+        System.out.println("\nProperties of pen2");
+        pen2.PrintProperties();
 
 
 /*      in below code pen1.name is assigned by stringBuilder but for printing output it taken as string by new string
