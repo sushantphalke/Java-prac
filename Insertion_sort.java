@@ -1,4 +1,5 @@
-public class Insertion_sort {
+
+public class Insertion_sort extends Bubble_sort_pro{
     public static void main(String[] args) {
         int [] numbers = {7,3,4,2,5,1,34,33,32,96};
 //insertion sort
@@ -11,8 +12,10 @@ public class Insertion_sort {
             }
             numbers[j+1]=current;
         }
-        for(int i =0 ;i<(numbers.length);i++){
-            System.out.print(numbers[i]+"  ");
-        }
+//        for(int i =0 ;i<(numbers.length);i++){
+//            System.out.print(numbers[i]+"  ");
+//        }
+        printArray(numbers);
+
     }
 }
