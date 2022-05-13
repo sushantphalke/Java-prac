@@ -1,8 +1,10 @@
-import java.util.Scanner;
 
+import java.util.Scanner;
 public class Sushs_array_package {
 
+    public static void main(String[] args) {
 
+    }
     //function to get user defined array of integers
     public static int[] getUserDefinedIntArray() {
         Scanner input  = new Scanner(System.in);
@@ -64,19 +66,20 @@ public class Sushs_array_package {
 
         for (int i = 0; i<arrayToSort.length; i++){
 
-//            int noToSwap = arrayToSort[i];
-//            int position = i;
-//
-//            for (int j=i+1;j<arrayToSort.length;j++) {
-//
-//                if (noToSwap>arrayToSort[j]) {
-//                    noToSwap = arrayToSort[j];
-//                    position= j;
-//                }
-//            }
-//            int temp = arrayToSort[i];
-//            arrayToSort[i]=arrayToSort[position];
-//            arrayToSort[position]=temp;
+/*          int noToSwap = arrayToSort[i];
+            int position = i;
+
+            for (int j=i+1;j<arrayToSort.length;j++) {
+
+                if (noToSwap>arrayToSort[j]) {
+                    noToSwap = arrayToSort[j];
+                    position= j;
+                }
+            }
+            int temp = arrayToSort[i];
+            arrayToSort[i]=arrayToSort[position];
+            arrayToSort[position]=temp;
+            */
 
             int smallest = i;
             for (int j=i+1; j<arrayToSort.length;j++){
