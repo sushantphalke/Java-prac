@@ -10,6 +10,14 @@ class Pen {
         System.out.println("type: "+this.type);
         System.out.println("color: "+this.color);
     }
+    Pen (Pen pen){
+        this.name= pen.name;
+        this.type=pen.type;
+        this.color=pen.color;
+    }
+    Pen(){
+
+    }
 }
 
 
@@ -29,6 +37,11 @@ public class OOP_one {
         pen2.color= new StringBuilder("Black");
         System.out.println("\nProperties of pen2");
         pen2.PrintProperties();
+
+        Pen pen3 = new Pen(pen1);
+        System.out.println("\nProperties of pen3");
+        pen3.PrintProperties();
+
 
 
 /*      in below code pen1.name is assigned by stringBuilder but for printing output it taken as string by new string
