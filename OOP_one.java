@@ -1,3 +1,5 @@
+
+import Oop_pkg.user;
 class Pen {
 
     StringBuilder name = new StringBuilder("");
@@ -42,7 +44,12 @@ public class OOP_one {
         System.out.println("\nProperties of pen3");
         pen3.PrintProperties();
 
+        user user1= new user();
+        user1.account_no= 123233;
+        user1.account_type = new StringBuilder("current");
+        user1.name = new StringBuilder("sushant");
 
+        user1.printProperties();
 
 /*      in below code pen1.name is assigned by stringBuilder but for printing output it taken as string by new string
         String pen1name = new String(pen1.name= new StringBuilder("Parker"));
