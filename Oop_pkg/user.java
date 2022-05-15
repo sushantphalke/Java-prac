@@ -1,6 +1,7 @@
 package Oop_pkg;
 
 public class user {
+//    make variables public to access in other files
     public int account_no;
     public StringBuilder name = new StringBuilder("");
     public StringBuilder account_type = new StringBuilder(""); // ballpoint,gel,etc.
