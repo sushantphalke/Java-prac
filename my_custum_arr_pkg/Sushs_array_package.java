@@ -1,4 +1,4 @@
-
+package my_custum_arr_pkg;
 import java.util.Scanner;
 public class Sushs_array_package {
 
@@ -87,6 +87,7 @@ public class Sushs_array_package {
                     smallest = j;
                 }
             }
+
             int temp = arrayToSort[smallest];
             arrayToSort[smallest] = arrayToSort[i];
             arrayToSort[i] = temp;
