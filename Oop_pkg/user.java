@@ -1,4 +1,4 @@
-package Oop_pkg;
+package Oop_pkg; // just name of this package
 
 public class user {
 //    make variables public to access in other files
