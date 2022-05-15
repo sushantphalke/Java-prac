@@ -44,6 +44,7 @@ public class OOP_one {
         System.out.println("\nProperties of pen3");
         pen3.PrintProperties();
 
+//        using package of user class
         user user1= new user();
         user1.account_no= 123233;
         user1.account_type = new StringBuilder("current");
