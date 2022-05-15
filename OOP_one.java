@@ -48,7 +48,6 @@ public class OOP_one {
         user1.account_no= 123233;
         user1.account_type = new StringBuilder("current");
         user1.name = new StringBuilder("sushant");
-
         user1.printProperties();
 
 /*      in below code pen1.name is assigned by stringBuilder but for printing output it taken as string by new string
