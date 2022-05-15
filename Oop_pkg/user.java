@@ -19,6 +19,6 @@ public class user {
     }
 
     public user() {
-
+//  blank function called just in support of above
     }
 }
