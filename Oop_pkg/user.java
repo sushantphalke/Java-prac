@@ -6,6 +6,7 @@ public class user {
     public StringBuilder name = new StringBuilder("");
     public StringBuilder account_type = new StringBuilder("");
 
+//    just printing object
     public void printProperties(){
         System.out.println("name: "+this.name);
         System.out.println("type: "+this.account_type);
