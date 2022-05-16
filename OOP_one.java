@@ -95,7 +95,7 @@ public class OOP_one {
         user1.getPassword();
         user1.printProperties();
 
-//        Abstract classes
+//      Abstract classes
         SnG sng = new SnG();
         sng.isActive();
         sng.Com_name();
