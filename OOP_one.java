@@ -1,5 +1,6 @@
 
 import Oop_pkg.user;
+import Oop_pkg.Bank;
 class Pen {
 
     StringBuilder name = new StringBuilder("");
@@ -21,7 +22,45 @@ class Pen {
 
     }
 }
+abstract class Com_account{
+    abstract void Com_name();
+    Com_account(){
+        System.out.println("you are creating a company account");
+    }
+    public void type(){
+        System.out.println("company current account");
+    }
 
+}
+
+class SnG extends Com_account {
+    @Override
+    void Com_name() {
+        System.out.println("SnG");
+    }
+
+    SnG (){
+        System.out.println("created SnG account");
+
+    }
+    public void isActive(){
+        System.out.println("SnG company account is active");
+    }
+
+}
+class AceSP extends Com_account {
+    @Override
+    void Com_name() {
+    }
+
+    AceSP(){
+        System.out.println("created AceSP account");
+    }
+    public void isActive(){
+        System.out.println("AceSP company account is active");
+    }
+
+}
 
 public class OOP_one {
     public static void main(String[] args) {
@@ -55,6 +94,11 @@ public class OOP_one {
         user1.setPassword(pass);
         user1.getPassword();
         user1.printProperties();
+
+//        Abstract classes
+        SnG sng = new SnG();
+        sng.isActive();
+        sng.Com_name();
 
 /*      in below code pen1.name is assigned by stringBuilder but for printing output it taken as string by new string
         String pen1name = new String(pen1.name= new StringBuilder("Parker"));
