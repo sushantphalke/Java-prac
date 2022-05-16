@@ -5,6 +5,18 @@ public class user {
     public int account_no;
     public StringBuilder name = new StringBuilder("");
     public StringBuilder account_type = new StringBuilder("");
+    private  StringBuilder password = new StringBuilder("");
+
+//    getters and setters for private functions
+//    getter
+    public void getPassword(){
+        System.out.println(this.password);
+    }
+//    Setter
+    public void setPassword(StringBuilder pass){
+        this.password = pass;
+    }
+
 
 //    just printing object
     public void printProperties(){
@@ -17,6 +29,7 @@ public class user {
         this.account_no = user.account_no;
         this.name = user.name;
         this.account_type = user.account_type;
+
     }
 
     public user() {
