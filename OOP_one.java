@@ -102,6 +102,7 @@ public class OOP_one {
 
         AceSP Ace = new AceSP();
         Ace.Com_name();
+        Ace.isActive();
 
 /*      in below code pen1.name is assigned by stringBuilder but for printing output it taken as string by new string
         String pen1name = new String(pen1.name= new StringBuilder("Parker"));
