@@ -3,9 +3,9 @@ import Oop_pkg.user;
 
 class Pen {
 
-    StringBuilder name = new StringBuilder("");
-    StringBuilder type = new StringBuilder(""); // ballpoint,gel,etc.
-    StringBuilder color = new StringBuilder("");
+    StringBuilder name = new StringBuilder();
+    StringBuilder type = new StringBuilder(); // ballpoint,gel,etc.
+    StringBuilder color = new StringBuilder();
 
     public void PrintProperties(){
 // this method calls properties of given objects
