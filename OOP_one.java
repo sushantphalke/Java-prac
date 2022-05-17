@@ -23,6 +23,10 @@ class Pen {
     }
 }
 abstract class Com_account{
+    static StringBuilder bank_name = new StringBuilder();
+    protected static void ChangeBankName(StringBuilder changed_bank_name){
+        bank_name = new StringBuilder(changed_bank_name);
+    }
     abstract void Com_name();
     Com_account(){
         System.out.println("you are creating a company account");
@@ -103,6 +107,11 @@ public class OOP_one {
         AceSP Ace = new AceSP();
         Ace.Com_name();
         Ace.isActive();
+// static keyword
+        Com_account.bank_name =new StringBuilder("Sng_bank");
+        Com_account.ChangeBankName(new StringBuilder("SnG's Bank"));
+        System.out.println(Com_account.bank_name);
+
 
 /*      in below code pen1.name is assigned by stringBuilder but for printing output it taken as string by new string
         String pen1name = new String(pen1.name= new StringBuilder("Parker"));

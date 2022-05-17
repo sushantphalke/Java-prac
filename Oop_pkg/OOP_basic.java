@@ -1,6 +1,7 @@
 package Oop_pkg;
 interface Animal {
     int eys = 2;
+
     void walk();
 
 }
