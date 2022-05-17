@@ -112,6 +112,9 @@ public class OOP_one {
         Com_account.ChangeBankName(new StringBuilder("SnG's Bank"));
         System.out.println(Com_account.bank_name);
 
+// static sets the particular property for each instance of object of class
+        System.out.println(SnG.bank_name);
+
 
 /*      in below code pen1.name is assigned by stringBuilder but for printing output it taken as string by new string
         String pen1name = new String(pen1.name= new StringBuilder("Parker"));
