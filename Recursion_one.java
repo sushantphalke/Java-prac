@@ -18,7 +18,7 @@ public class Recursion_one {
        }
     }
 
-//  factorial of n
+//  factorial of n using recursion
 
     public static long Calculate_Fact(long n){
         if (n>1){
