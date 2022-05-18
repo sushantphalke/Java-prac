@@ -1,11 +1,13 @@
 public class Recursion_one {
     public static void main(String[] args) {
-//    calculating sum of n numbers using recursion
+
+
       int sum =0;
       int n = 100;
+
       long  m =34;
       System.out.println(Calculate_Sum(n));
-//      please do not enter number greater than 49 it will be out of range even long is used
+//    please do not enter number greater than 49 it will be out of range even long is used
       System.out.println(Calculate_Fact(m));
 
     }
