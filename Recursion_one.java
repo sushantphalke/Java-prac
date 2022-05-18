@@ -2,10 +2,12 @@ public class Recursion_one {
     public static void main(String[] args) {
 
       int n = 100;
+        System.out.println("sum");
       System.out.println(Calculate_Sum(n));
 
 //    please do not enter number greater than 49 it will be out of range even long is used
       long  m =34;
+        System.out.println("factorial");
       System.out.println(Calculate_Fact(m));
 
     }
