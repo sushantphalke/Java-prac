@@ -5,6 +5,7 @@ public class Recursion_one {
       int n = 100;
      long  m =34;
 //        System.out.println(Calculate_Sum(n));
+//      please do not enter number greater than 49 it will be out of range
         System.out.println(Calculate_Fact(m));
 
     }
@@ -17,7 +18,8 @@ public class Recursion_one {
        }
     }
 
-//   factorial of n
+//  factorial of n
+
     public static long Calculate_Fact(long n){
         if (n>1){
             return (n * Calculate_Fact(n-1));
