@@ -1,8 +1,6 @@
 public class Recursion_one {
     public static void main(String[] args) {
 
-
-      int sum =0;
       int n = 100;
       System.out.println(Calculate_Sum(n));
 
