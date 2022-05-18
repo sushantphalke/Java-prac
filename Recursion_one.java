@@ -1,12 +1,15 @@
 public class Recursion_one {
     public static void main(String[] args) {
-//      calculating sum of n numbers using recursion
+//    calculating sum of n numbers using recursion
       int sum =0;
       int n = 100;
-        System.out.println(Calculate_Sum(n));
+     long  m =34;
+//        System.out.println(Calculate_Sum(n));
+        System.out.println(Calculate_Fact(m));
 
     }
-//    sum of n positive integers using recursion
+
+//  sum of n positive integers using recursion
     public static int Calculate_Sum( int n){
        if(n>0) return (n + Calculate_Sum(n - 1));
        else {
@@ -14,4 +17,11 @@ public class Recursion_one {
        }
     }
 
+//   factorial of n
+    public static long Calculate_Fact(long n){
+        if (n>1){
+            return (n * Calculate_Fact(n-1));
+        }
+        else return 1;
+    }
 }
