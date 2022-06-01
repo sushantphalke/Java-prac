@@ -61,11 +61,23 @@ public class Sushs_array_package {
         return arrayToSort;
     }
 
-    //selection sort function
+    //selection sort function using  greedy technique
     public static int[] selection_sort(int[] arrayToSort){
 
         for (int i = 0; i<arrayToSort.length; i++){
 
+
+            int smallest = i;
+            for (int j=i+1; j<arrayToSort.length;j++){
+                if(arrayToSort[smallest]>arrayToSort[j]){
+                    smallest = j;
+                }
+            }
+
+            int temp = arrayToSort[smallest];
+            arrayToSort[smallest] = arrayToSort[i];
+            arrayToSort[i] = temp;
+        }
 /*          int noToSwap = arrayToSort[i];
             int position = i;
 
@@ -80,19 +92,6 @@ public class Sushs_array_package {
             arrayToSort[i]=arrayToSort[position];
             arrayToSort[position]=temp;
             */
-
-            int smallest = i;
-            for (int j=i+1; j<arrayToSort.length;j++){
-                if(arrayToSort[smallest]>arrayToSort[j]){
-                    smallest = j;
-                }
-            }
-
-            int temp = arrayToSort[smallest];
-            arrayToSort[smallest] = arrayToSort[i];
-            arrayToSort[i] = temp;
-        }
-
         return arrayToSort;
     }
 

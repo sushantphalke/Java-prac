@@ -9,6 +9,8 @@ public class Recursion_one {
       long  m =34;
         System.out.println("factorial");
       System.out.println(Calculate_Fact(m));
+        System.out.println("power of");
+        System.out.println(Calculate_Pow(0,3));
 
     }
 
@@ -28,5 +30,13 @@ public class Recursion_one {
         }
         else return 1;
     }
-
+//    power of x to n
+    public static int Calculate_Pow(int x , int n) {
+//        if (x != 0) {
+            if (n > 1) {
+                return x * (Calculate_Pow(x, n - 1));
+            } else return x;
+        }
+//        return 0;
+//    }
 }
