@@ -3,7 +3,7 @@ public class Recursion_two {
 
 
     public static void main(String[] args) {
-        String str = "abcd";
+        String str = "abc";
         My_Permutations(str,"");
 
     }
