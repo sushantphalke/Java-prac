@@ -1,42 +1,66 @@
 import java.io.ObjectInputFilter;
 import java.util.ArrayList;
 
-public class Maze_problem_rec_1 {
-    static int Count_paths(int i,int j , int m,int n){
 
-        if (i == m || j == n) {
+
+
+public class Adv_problems_recurssion_1 {
+
+
+
+
+    static int Count_paths(int i,int j , int rows,int columns){
+
+
+        if (i == rows || j == columns) {
             return 0;
         }
 
-        if (i == m-1 && j == n-1){
+
+        if (i == rows-1 && j == columns-1){
             return 1;
         }
 
+
 //      count dawn paths
-        int Dawn_paths = Count_paths(i+1,j,m,n);
+        int Dawn_paths = Count_paths(i+1,j,rows,columns);
+
+
 //      Count Right Paths
-        int Right_paths = Count_paths(i,j+1,m,n);
+        int Right_paths = Count_paths(i,j+1,rows,columns);
+
 
 //      return count
         return Dawn_paths+Right_paths;
+
+
     }
 
-    static int Count_placements(int m , int n){
-        if (m==n ){
+
+
+
+
+
+    static int Count_placements(int rowtiles, int columntiles){
+        if (rowtiles==columntiles ){
             return 2;
         }
-        if (m<n){
+        if (rowtiles<columntiles){
             return 1;
         }
 
 //        count Vertical placements
-        int Vertical_placements = Count_placements(m-n,n);
+        int Vertical_placements = Count_placements(rowtiles-columntiles,columntiles);
         //        count horizontal placements
-        int Horizontal_placements= Count_placements(m-1,n);
+        int Horizontal_placements= Count_placements(rowtiles-1,columntiles);
 
         return Vertical_placements+Horizontal_placements;
 
     }
+
+
+
+
 
     static int Invite_guests(int n){
         if (n<=1){
@@ -50,6 +74,11 @@ public class Maze_problem_rec_1 {
 
         return way1+way2;
     }
+
+
+
+
+
 
 
 
@@ -78,26 +107,45 @@ public class Maze_problem_rec_1 {
 
     }
 
+
+
+
+
+
     public static void main(String[] args) {
+
+
         System.out.println("count paths function on maze :");
-        int m= 3; int n = 3;
-        System.out.println(Count_paths(0,0,m,n));
+        int rows= 4; int columns = 4;
+        System.out.println(Count_paths(0,0,rows,columns));
+
+
+
 
         System.out.println("count placements function on tiles placed");
 
-        int x = 4;
-        int y = 2;
-        System.out.println(Count_placements(x,y));
+        int rowtiles= 4;
+        int columntiles = 2;
+        System.out.println(Count_placements(rowtiles,columntiles));
+
+
+
 
         System.out.println("total no. of ways to invite guests");
         int a = 4;
         System.out.println(Invite_guests(a));
+
+
+
 
         System.out.println("printing subsets up to n natural number");
         int b=4;
         ArrayList<Integer> subset = new ArrayList<>();
         Find_subsets(b,subset);
 
-
     }
+
+
 }
+
+
