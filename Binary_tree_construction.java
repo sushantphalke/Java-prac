@@ -6,12 +6,9 @@ public class Binary_tree_construction {
             this.data  = data;
             this.left = null;
             this.right = null;
-
-
         }
-
     }
-    static class Binary_tree{
+   public static class Binary_tree{
         static int idx = -1;
         public static Node Build_tree(int [] Nodes){
             idx++;
@@ -23,17 +20,16 @@ public class Binary_tree_construction {
             newNode.right = Build_tree(Nodes);
             return newNode;
         }
-
     }
 
     public static void main(String[] args) {
-        int nodes [] = {1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
+        int [] nodes  = {1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
+
         Binary_tree tree  = new Binary_tree();
-        Node root =  tree.Build_tree(nodes);
+        Node root =tree.Build_tree(nodes);
+
+        assert root != null;
         System.out.println(root.left.data);
         System.out.println(root.right.data);
-
     }
-
-
 }
