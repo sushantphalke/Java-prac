@@ -1,3 +1,6 @@
+import java.io.ObjectInputFilter;
+import java.util.ArrayList;
+
 public class Maze_problem_rec_1 {
     static int Count_paths(int i,int j , int m,int n){
 
@@ -48,6 +51,33 @@ public class Maze_problem_rec_1 {
         return way1+way2;
     }
 
+
+
+//    printing subsets of arraylist
+    public static void PrintSubset(ArrayList<Integer> subset){
+        for (int i = 0; i < subset.size(); i++){
+            System.out.print(subset.get(i)+", ");
+
+        }
+        System.out.println("");
+    }
+
+    public static void Find_subsets(int n , ArrayList<Integer> subset){
+    if (n==0){
+        PrintSubset(subset);
+        return;
+    }
+
+//        element added
+        subset.add(n);
+        Find_subsets(n-1, subset);
+
+//        element not added
+        subset.remove(subset.size()-1);
+        Find_subsets(n-1,subset);
+
+    }
+
     public static void main(String[] args) {
         System.out.println("count paths function on maze :");
         int m= 3; int n = 3;
@@ -62,6 +92,12 @@ public class Maze_problem_rec_1 {
         System.out.println("total no. of ways to invite guests");
         int a = 4;
         System.out.println(Invite_guests(a));
+
+        System.out.println("printing subsets up to n natural number");
+        int b=4;
+        ArrayList<Integer> subset = new ArrayList<>();
+        Find_subsets(b,subset);
+
 
     }
 }
