@@ -1,6 +1,6 @@
 public class Butterfly_pattern {
     public static void main(String[] args) {
-        int n = 15 ;
+        int n = 7 ;
         //   upper half
         for (int i =1;i<=n;i++){
         //    1st stars
@@ -10,7 +10,7 @@ public class Butterfly_pattern {
         //   SPACES
             int spaces = 2*(n-i);
             for (int j =1 ;j<=spaces;j++){
-                System.out.print(" ");
+                System.out.print(".");
             }
         //   last stars
             for (int j=1;j<=i;j++){
@@ -27,7 +27,7 @@ public class Butterfly_pattern {
         //  SPACES
             int spaces = 2*(n-i);
             for (int j =1 ;j<=spaces;j++){
-                System.out.print(" ");
+                System.out.print(".");
             }
         //   last stars
             for (int j=1;j<=i;j++){
